@@ -1,12 +1,16 @@
 Laboratory Assignments 4
- Subject: Design Principles of Operating Systems
+
+Subject: Design Principles of Operating Systems
 Subject code: CSE 3249
 Assignment 4: Familiarization with Process Management in Linux 
 environment.
+
 Objective of this Assignment:
  To trace the different states of a process during its execution.
  To learn the use of different system calls such as (fork(),vfork(),wait(),exec()) for
 process handling in Unix/Linux environment.
+
+
 1. Write a C program to create a child process using fork() system call. The child process will
 print the message “Child” with its process identifier and then continue in an indefinite loop.
 The parent process will print the message “Parent” with its process identifier and then
@@ -41,15 +45,15 @@ int main() {
 
 
 
- /*
+
  a. command- ps -l
  b. command-kill <child_pid>
    ps -l
  c. command- kill <parent_pid>
  
-*/
 
 
+d.
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -70,12 +74,13 @@ int main() {
 }
 
 
-//e. kill child while parents wait
+e. kill child while parents wait
 
 
 
 
 2. Trace the output of the following codes:
+
 a) int main( )
  {
  if(fork()==0)
@@ -607,3 +612,4 @@ int main() {
     }
     return 0;
 }
+
